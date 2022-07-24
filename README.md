@@ -89,7 +89,7 @@ Classification Report:
 Using your knowledge of the imblearn.ensemble library, you’ll train and compare two different ensemble classifiers, BalancedRandomForestClassifier and EasyEnsembleClassifier, to predict credit risk and evaluate each model. Using both algorithms, you’ll resample the dataset, view the count of the target classes, train the ensemble classifier, calculate the balanced accuracy score, generate a confusion matrix, and generate a classification report.
 ## BalancedRandomForestClassifier
 A balanced random forest randomly under-samples each boostrap sample to balance it.After resampling the training data we get the following results:<br>
-<img src = "https://github.com/fathi129/Credit_Risk_Analysis/blob/master/Screenshots%20of%20Credit%20Risk%20Analysis/Deliverable%203/balance_brfc.png"  width = 900><br>
+<img src = "https://github.com/fathi129/Credit_Risk_Analysis/blob/master/Screenshots%20of%20Credit%20Risk%20Analysis/Deliverable%203/balan%20e_brfc.png"  width = 900><br>
 Confusion Matrix:
 <img src = "https://github.com/fathi129/Credit_Risk_Analysis/blob/master/Screenshots%20of%20Credit%20Risk%20Analysis/Deliverable%203/cm_brfc.png"  width = 900><br>
 Classification Report:
