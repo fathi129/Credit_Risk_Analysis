@@ -18,7 +18,7 @@ Credit risk is an inherently unbalanced classification problem, as good loans ea
 Using imbalanced-learn and scikit-learn libraries, we will evaluate three machine learning models by using resampling to determine which is better at predicting credit risk. First, we will use the oversampling RandomOverSampler and SMOTE algorithms, and then we will use the undersampling ClusterCentroids algorithm. Using these algorithms, we will resample the dataset, view the count of the target classes, train a logistic regression classifier, calculate the balanced accuracy score, generate a confusion matrix, and generate a classification report. First, we will create the training variables by converting the string values into numerical ones using the get_dummies() method. Create the target variables. Check the balance of the target variables. Next we will begin resampling the training data.<br>
 
 ## OverSampling 
-## RandomOverSampler algorithm 
+## 1.RandomOverSampler algorithm 
 Random oversampling involves randomly selecting examples from the minority class with replacement and adding them to the training dataset. After resampling the training data, we get the following results:<br>
 
 <img src = "https://github.com/fathi129/Credit_Risk_Analysis/blob/master/Screenshots%20of%20Credit%20Risk%20Analysis/Deliverable%201/balance_ros.png"  width = 600><br>
