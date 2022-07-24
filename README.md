@@ -33,7 +33,7 @@ Random oversampling involves randomly selecting examples from the minority class
 - High-Risk Recall: 0.62
 - Low-Risk Recall: 0.68
 - High-Risk F1 Score: 0.02
-- Low-Risk F1 Score: 0.81
+- Low-Risk F1 Score: 0.81<br>
 The balanced Accuracy is only 64.9%,The high_risk population has sensitivity of only 62% and precision 1%.Due to high number of low_risk population the sensitivity is  only 68% with 100% accuracy.
 
 ## SMOTE algorithm
@@ -50,7 +50,7 @@ SMOTE works by selecting examples that are close in the feature space, drawing a
 - High-Risk Recall: 0.63
 - Low-Risk Recall: 0.66
 - High-Risk F1 Score: 0.02
-- Low-Risk F1 Score: 0.79
+- Low-Risk F1 Score: 0.79 <br>
 The balanced Accuracy is only 64.43%,The high_risk population has sensitivity of only 63% and precision 1%.
 Due to high number of low_risk population the sensitivity is  only 66% with 100% accuracy.
 
@@ -69,7 +69,7 @@ Cluster centroid undersampling is akin to SMOTE. The algorithm identifies cluste
 - High-Risk Recall: 0.61
 - Low-Risk Recall: 0.45
 - High-Risk F1 Score: 0.01
-- Low-Risk F1 Score: 0.62
+- Low-Risk F1 Score: 0.62 <br>
 The balanced Accuracy is only 53%,The high_risk population has sensitivity of only 61% and precision 1%.
 Due to high number of low_risk population the sensitivity is  only 45% with 100% accuracy.
 
@@ -89,7 +89,7 @@ SMOTEENN Algorithm,this method combines the SMOTE ability to generate synthetic 
 - High-Risk Recall: 0.71
 - Low-Risk Recall: 0.56
 - High-Risk F1 Score: 0.02
-- Low-Risk F1 Score: 0.72
+- Low-Risk F1 Score: 0.72 <br>
 The balanced Accuracy is only 63.7%,The high_risk population has sensitivity of only 71% and precision 1%.
 Due to high number of low_risk population the sensitivity is  only 56% with 100% accuracy.
 
@@ -108,7 +108,7 @@ A balanced random forest randomly under-samples each boostrap sample to balance 
 - High-Risk Recall: 0.67
 - Low-Risk Recall: 0.91
 - High-Risk F1 Score: 0.07
-- Low-Risk F1 Score: 0.95
+- Low-Risk F1 Score: 0.95 <br>
 The balanced Accuracy is only 79%,The high_risk population has sensitivity of only 67% and precision 4%.
 Due to low number of low_risk population the sensitivity is 91% with 100% accuracy.
 
@@ -126,7 +126,7 @@ This algorithm is known as EasyEnsemble.The classifier is an ensemble of AdaBoos
 - High-Risk Recall: 0.91
 - Low-Risk Recall: 0.94
 - High-Risk F1 Score: 0.14
-- Low-Risk F1 Score: 0.97
+- Low-Risk F1 Score: 0.97 <br>
 The balanced Accuracy is 93%,The high_risk population has sensitivity of 91% and precision 7%.
 Due to low number of low_risk population the sensitivity is  only 94% with 100% accuracy.
 
@@ -134,7 +134,8 @@ Due to low number of low_risk population the sensitivity is  only 94% with 100% 
 - In Credit Risk,High Sensitivity is very important compared to precision because we need to find the high risk people so that the loan will not be granted to them.
 - By seeing all the models we can say that oversampling algorithms performed well than undersampling algorithms.
 - When compared to Ensemble classifiers both of them performed well.But Easy Ensemble Classifier or Ada Boost Algorithm performed well by finding the high risk sensitivity of 91% and low-risk sensitivity of 94%.The balance accuracy score of this model is 92.5% which is higher compare to other models.
-- Eventhough the precison of high_risk is low and it detects the number of false positives more,The banks can once again check the applicants for verifiying them instead of granting loan to high risk applicants.I would recommend Ada Boost Algorithm compared to other models.since the accuracy and sensitivity is more.
+- Eventhough the precison of high_risk is low(7%) and it detects the number of false positives more,The banks can once again check the applicants for verifiying them instead of granting loan to high risk applicants.I would recommend Ada Boost Algorithm compared to other models.since the accuracy and sensitivity is more.
+- Since the data is given only for the first quarter we can analyze further by adding further data for all the quarters and trying out different models.We could also remove null values,drop columns and rows and scale the data before performing modeling.
 
 
 
