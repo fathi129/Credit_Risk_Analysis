@@ -21,9 +21,9 @@ Using imbalanced-learn and scikit-learn libraries, we will evaluate three machin
 ## OverSampling 
 ## RandomOverSampler algorithm 
 Random oversampling involves randomly selecting examples from the minority class, with replacement, and adding them to the training dataset.After resampling the training data we get the following results
-<img src = "https://github.com/fathi129/Credit_Risk_Analysis/blob/master/Screenshots%20of%20Credit%20Risk%20Analysis/Deliverable%201/balance_ros.png"  width = 900><br>
+<img src = "https://github.com/fathi129/Credit_Risk_Analysis/blob/master/Screenshots%20of%20Credit%20Risk%20Analysis/Deliverable%201/balance_ros.png"  width = 600><br>
 Confusion Matrix:
-<img src = "https://github.com/fathi129/Credit_Risk_Analysis/blob/master/Screenshots%20of%20Credit%20Risk%20Analysis/Deliverable%201/cm_ros.png"  width = 900><br>
+<img src = "https://github.com/fathi129/Credit_Risk_Analysis/blob/master/Screenshots%20of%20Credit%20Risk%20Analysis/Deliverable%201/cm_ros.png"  width = 600><br>
 Classification Report:
 <img src = "https://github.com/fathi129/Credit_Risk_Analysis/blob/master/Screenshots%20of%20Credit%20Risk%20Analysis/Deliverable%201/report_ros.png"  width = 900><br>
 - Balance Accuracy Score: 64.9%
