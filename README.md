@@ -1,5 +1,5 @@
 # Credit_Risk_Analysis
-To Build and evaluate several machine learning models or algorithms to predict credit risk using Python and scikit Libraries.
+To Build and evaluate several machine learning models or algorithms to predict credit risk using Python and scikit libraries.
 
 ## Overview of the Analysis
 Loans are an essential part of the modern system. On the one hand, a loan creates revenues, and another hand, there is a risk that the borrower won't repay the loans, and the bank will lose the money. Banks have traditionally relied on the measures like credit scores, income, and collateral assets to assess the lending risk. The rise of financial technology enabled lenders to use Machine Learning to analyze risk. Machine Learning can process a large amount of data to arrive at a single decision on whether or not the lenders approve the loan application. We will use Python and scikit-learn libraries to build and evaluate several machine learning models to predict credit risk. We will compare the strengths and weaknesses of different machine learning models. We will assess how well a model classifies and predicts data. We will be using skills like data munching and resampling.
