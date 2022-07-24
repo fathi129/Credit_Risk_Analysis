@@ -34,6 +34,7 @@ Random oversampling involves randomly selecting examples from the minority class
 - Low-Risk Recall: 0.68
 - High-Risk F1 Score: 0.02
 - Low-Risk F1 Score: 0.81
+The balanced Accuracy is only 64.9%,The high_risk population has sensitivity of only 62% and precision 1%.Due to high number of low_risk population the sensitivity is  only 68% with 100% accuracy.
 
 ## SMOTE algorithm
 SMOTE works by selecting examples that are close in the feature space, drawing a line between the examples in the feature space and drawing a new sample at a point along that line.The approach is effective because new synthetic examples from the minority class are created that are plausible, that is, are relatively close in feature space to existing examples from the minority class.A general downside of the approach is that synthetic examples are created without considering the majority class, possibly resulting in ambiguous examples if there is a strong overlap for the classes.After resampling the training data we get the following results<br>
@@ -50,6 +51,8 @@ SMOTE works by selecting examples that are close in the feature space, drawing a
 - Low-Risk Recall: 0.66
 - High-Risk F1 Score: 0.02
 - Low-Risk F1 Score: 0.79
+The balanced Accuracy is only 64.43%,The high_risk population has sensitivity of only 63% and precision 1%.
+Due to high number of low_risk population the sensitivity is  only 66% with 100% accuracy.
 
 ## UnderSampling
 ## ClusterCentroids algorithm
@@ -67,6 +70,8 @@ Cluster centroid undersampling is akin to SMOTE. The algorithm identifies cluste
 - Low-Risk Recall: 0.45
 - High-Risk F1 Score: 0.01
 - Low-Risk F1 Score: 0.62
+The balanced Accuracy is only 53%,The high_risk population has sensitivity of only 61% and precision 1%.
+Due to high number of low_risk population the sensitivity is  only 45% with 100% accuracy.
 
 ## Deliverable 2: Use the SMOTEENN algorithm to Predict Credit Risk
 A combinatorial approach of over and undersampling algorithm is used.we will determine if the results from the combinatorial approach are better at predicting credit risk than the resampling algorithms from Deliverable 1. Using the SMOTEENN algorithm, we res will resample the dataset, view the count of the target classes, train a logistic regression classifier, calculate the balanced accuracy score, generate a confusion matrix, and generate a classification report.
@@ -85,6 +90,8 @@ SMOTEENN Algorithm,this method combines the SMOTE ability to generate synthetic 
 - Low-Risk Recall: 0.56
 - High-Risk F1 Score: 0.02
 - Low-Risk F1 Score: 0.72
+The balanced Accuracy is only 63.7%,The high_risk population has sensitivity of only 71% and precision 1%.
+Due to high number of low_risk population the sensitivity is  only 56% with 100% accuracy.
 
 ## Deliverable 3: Use Ensemble Classifiers to Predict Credit Risk
 Using your knowledge of the imblearn.ensemble library, you’ll train and compare two different ensemble classifiers, BalancedRandomForestClassifier and EasyEnsembleClassifier, to predict credit risk and evaluate each model. Using both algorithms, you’ll resample the dataset, view the count of the target classes, train the ensemble classifier, calculate the balanced accuracy score, generate a confusion matrix, and generate a classification report.
@@ -102,6 +109,8 @@ A balanced random forest randomly under-samples each boostrap sample to balance 
 - Low-Risk Recall: 0.91
 - High-Risk F1 Score: 0.07
 - Low-Risk F1 Score: 0.95
+The balanced Accuracy is only 79%,The high_risk population has sensitivity of only 67% and precision 4%.
+Due to low number of low_risk population the sensitivity is 91% with 100% accuracy.
 
 ## EasyEnsembleClassifier
 This algorithm is known as EasyEnsemble.The classifier is an ensemble of AdaBoost learners trained on different balanced boostrap samples. The balancing is achieved by random under-sampling.After resampling the training data we get the following results:<br>
@@ -118,6 +127,18 @@ This algorithm is known as EasyEnsemble.The classifier is an ensemble of AdaBoos
 - Low-Risk Recall: 0.94
 - High-Risk F1 Score: 0.14
 - Low-Risk F1 Score: 0.97
+The balanced Accuracy is 93%,The high_risk population has sensitivity of 91% and precision 7%.
+Due to low number of low_risk population the sensitivity is  only 94% with 100% accuracy.
+
+## Summary
+- In Credit Risk,High Sensitivity is very important compared to precision because we need to find the high risk people so that the loan will not be granted to them.
+- By seeing all the models we can say that oversampling algorithms performed well than undersampling algorithms.
+- When compared to Ensemble classifiers both of them performed well.But Easy Ensemble Classifier or Ada Boost Algorithm performed well by finding the high risk sensitivity of 91% and low-risk sensitivity of 94%.The balance accuracy score of this model is 92.5% which is higher compare to other models.
+- Eventhough the precison of high_risk is low and it detects the number of false positives more,The banks can once again check the applicants for verifiying them instead of granting loan to high risk applicants.I would recommend Ada Boost Algorithm compared to other models.since the accuracy and sensitivity is more.
+
+
+
+
 
 
 
