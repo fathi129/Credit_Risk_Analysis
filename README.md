@@ -21,17 +21,42 @@ Using imbalanced-learn and scikit-learn libraries, we will evaluate three machin
 ## OverSampling 
 ## RandomOverSampler algorithm 
 Random oversampling involves randomly selecting examples from the minority class, with replacement, and adding them to the training dataset.After resampling the training data we get the following results
-
+Confusion Matrix:
+Classification Report:
+- Balance Accuracy Score:
+- High-Risk Precision: 0.04
+- Low-Risk Precision: 1.00
+- High-Risk Recall: 0.67
+- Low-Risk Recall: 0.91
+- High-Risk F1 Score: 0.07
+- Low-Risk F1 Score: 0.95
 
 ## SMOTE algorithm
 SMOTE works by selecting examples that are close in the feature space, drawing a line between the examples in the feature space and drawing a new sample at a point along that line.The approach is effective because new synthetic examples from the minority class are created that are plausible, that is, are relatively close in feature space to existing examples from the minority class.A general downside of the approach is that synthetic examples are created without considering the majority class, possibly resulting in ambiguous examples if there is a strong overlap for the classes.After resampling the training data we get the following results
+Confusion Matrix:
+Classification Report:
+- Balance Accuracy Score:
+- High-Risk Precision: 0.04
+- Low-Risk Precision: 1.00
+- High-Risk Recall: 0.67
+- Low-Risk Recall: 0.91
+- High-Risk F1 Score: 0.07
+- Low-Risk F1 Score: 0.95
 
 
 
 ##UnderSampling
 ## ClusterCentroids algorithm
-Clustering is an Unsupervised Learning Approach. But CCMUT, only uses the concept of finding cluster centroid (clusters are created encircling data-points belonging to the majority class).After finding the cluster centroid of the majority class, the instance belonging to the cluster (majority class), which is farthest from the cluster centroid in feature space, is considered to be the most unimportant instance. On the contrary, the instance belonging to the majority class, that is nearest to the cluster centroid in feature space, is considered to be the most important instance.After resampling the training data we get the following results
-
+Cluster centroid undersampling is akin to SMOTE. The algorithm identifies clusters of the majority class, then generates synthetic data points, called centroids, that are representative of the clusters. The majority class is then undersampled down to the size of the minority class.After resampling the training data we get the following results
+Confusion Matrix:
+Classification Report:
+- Balance Accuracy Score:
+- High-Risk Precision: 0.04
+- Low-Risk Precision: 1.00
+- High-Risk Recall: 0.67
+- Low-Risk Recall: 0.91
+- High-Risk F1 Score: 0.07
+- Low-Risk F1 Score: 0.95
 
 
 Deliverable 2: Use the SMOTEENN algorithm to Predict Credit Risk
@@ -39,11 +64,44 @@ A combinatorial approach of over and undersampling algorithm is used.we will det
 ## SMOTEENN ALGORITHM
 SMOTEENN Algorithm,this method combines the SMOTE ability to generate synthetic examples for minority class and ENN ability to delete some observations from both classes that are identified as having different class between the observation’s class and its K-nearest neighbor majority class.After resampling the training data we get the following results
 
+Confusion Matrix:
+Classification Report:
+- Balance Accuracy Score:
+- High-Risk Precision: 0.04
+- Low-Risk Precision: 1.00
+- High-Risk Recall: 0.67
+- Low-Risk Recall: 0.91
+- High-Risk F1 Score: 0.07
+- Low-Risk F1 Score: 0.95
 ## Deliverable 3: Use Ensemble Classifiers to Predict Credit Risk
 Using your knowledge of the imblearn.ensemble library, you’ll train and compare two different ensemble classifiers, BalancedRandomForestClassifier and EasyEnsembleClassifier, to predict credit risk and evaluate each model. Using both algorithms, you’ll resample the dataset, view the count of the target classes, train the ensemble classifier, calculate the balanced accuracy score, generate a confusion matrix, and generate a classification report.
 
 ## BalancedRandomForestClassifier
+A balanced random forest randomly under-samples each boostrap sample to balance it.After resampling the training data we get the following results
+Confusion Matrix:
+Classification Report:
+- Balance Accuracy Score:
+- High-Risk Precision: 0.04
+- Low-Risk Precision: 1.00
+- High-Risk Recall: 0.67
+- Low-Risk Recall: 0.91
+- High-Risk F1 Score: 0.07
+- Low-Risk F1 Score: 0.95
 
-##EasyEnsembleClassifier
+
+
+## EasyEnsembleClassifier
+This algorithm is known as EasyEnsemble.The classifier is an ensemble of AdaBoost learners trained on different balanced boostrap samples. The balancing is achieved by random under-sampling.After resampling the training data we get the following results
+Confusion Matrix:
+Classification Report:
+- Balance Accuracy Score:
+- High-Risk Precision: 0.04
+- Low-Risk Precision: 1.00
+- High-Risk Recall: 0.67
+- Low-Risk Recall: 0.91
+- High-Risk F1 Score: 0.07
+- Low-Risk F1 Score: 0.95
+
+
 
 
