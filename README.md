@@ -6,10 +6,44 @@ Loans are the essential part of the modern system.On one hand loan creates reven
 
 ## Purpose of the Analysis
 Credit risk is an inherently unbalanced classification problem, as good loans easily outnumber risky loans. Therefore, we will need to employ different techniques to train and evaluate models with unbalanced classes. We will use imbalanced-learn and scikit-learn libraries to build and evaluate models using resampling.
-Using the credit card credit dataset from LendingClub, a peer-to-peer lending services company, we will oversample the data using the RandomOverSampler and SMOTE algorithms, and undersample the data using the ClusterCentroids algorithm. Then, we will use a combinatorial approach of over- and undersampling using the SMOTEENN algorithm. Next, we will compare two new machine learning models that reduce bias, BalancedRandomForestClassifier and EasyEnsembleClassifier, to predict credit risk. Once they are done,we will evaluate the performance of these models and make a written recommendation on whether they should be used to predict credit risk.
+Using the credit card credit dataset from LendingClub, a peer-to-peer lending services company, we will oversample the data using the RandomOverSampler and SMOTE algorithms, and undersample the data using the ClusterCentroids algorithm. Then, we will use a combinatorial approach of over and undersampling using the SMOTEENN algorithm. Next, we will compare two new machine learning models that reduce bias, BalancedRandomForestClassifier and EasyEnsembleClassifier, to predict credit risk. Once they are done,we will evaluate the performance of these models and make a written recommendation on whether they should be used to predict credit risk.
 
 ## Resources Used
-*DataSources*: [LoanStats_2019Q1.csv](https://github.com/fathi129/Credit_Risk_Analysis/blob/master/LoanStats_2019Q1.csv)<br>
+*DataSources*:  [LoanStats_2019Q1.csv](https://github.com/fathi129/Credit_Risk_Analysis/blob/master/LoanStats_2019Q1.csv)<br>
 *Software used*: Jupyter Notebook <br>
 *Language*: Python<br>
-*Libraries*:Scikit-learn,imbalanced-learn.<br>
+*Libraries*: Scikit-learn,imbalanced-learn.<br>
+
+## Results
+### Deliverable 1: Use Resampling Models to Predict Credit Risk
+Using imbalanced-learn and scikit-learn libraries, we will evaluate three machine learning models by using resampling to determine which is better at predicting credit risk. First, we will use the oversampling RandomOverSampler and SMOTE algorithms, and then we will use the undersampling ClusterCentroids algorithm. Using these algorithms, we will resample the dataset, view the count of the target classes, train a logistic regression classifier, calculate the balanced accuracy score, generate a confusion matrix, and generate a classification report.First we will create the training variables by converting the string values into numerical ones using the get_dummies() method.Create the target variables.Check the balance of the target variables.Next we will begin resampling the training data.
+
+## OverSampling 
+## RandomOverSampler algorithm 
+Random oversampling involves randomly selecting examples from the minority class, with replacement, and adding them to the training dataset.After resampling the training data we get the following results
+
+
+## SMOTE algorithm
+SMOTE works by selecting examples that are close in the feature space, drawing a line between the examples in the feature space and drawing a new sample at a point along that line.The approach is effective because new synthetic examples from the minority class are created that are plausible, that is, are relatively close in feature space to existing examples from the minority class.A general downside of the approach is that synthetic examples are created without considering the majority class, possibly resulting in ambiguous examples if there is a strong overlap for the classes.After resampling the training data we get the following results
+
+
+
+##UnderSampling
+## ClusterCentroids algorithm
+Clustering is an Unsupervised Learning Approach. But CCMUT, only uses the concept of finding cluster centroid (clusters are created encircling data-points belonging to the majority class).After finding the cluster centroid of the majority class, the instance belonging to the cluster (majority class), which is farthest from the cluster centroid in feature space, is considered to be the most unimportant instance. On the contrary, the instance belonging to the majority class, that is nearest to the cluster centroid in feature space, is considered to be the most important instance.After resampling the training data we get the following results
+
+
+
+Deliverable 2: Use the SMOTEENN algorithm to Predict Credit Risk
+A combinatorial approach of over and undersampling algorithm is used.we will determine if the results from the combinatorial approach are better at predicting credit risk than the resampling algorithms from Deliverable 1. Using the SMOTEENN algorithm, we res will resample the dataset, view the count of the target classes, train a logistic regression classifier, calculate the balanced accuracy score, generate a confusion matrix, and generate a classification report.
+## SMOTEENN ALGORITHM
+SMOTEENN Algorithm,this method combines the SMOTE ability to generate synthetic examples for minority class and ENN ability to delete some observations from both classes that are identified as having different class between the observation’s class and its K-nearest neighbor majority class.After resampling the training data we get the following results
+
+## Deliverable 3: Use Ensemble Classifiers to Predict Credit Risk
+Using your knowledge of the imblearn.ensemble library, you’ll train and compare two different ensemble classifiers, BalancedRandomForestClassifier and EasyEnsembleClassifier, to predict credit risk and evaluate each model. Using both algorithms, you’ll resample the dataset, view the count of the target classes, train the ensemble classifier, calculate the balanced accuracy score, generate a confusion matrix, and generate a classification report.
+
+## BalancedRandomForestClassifier
+
+##EasyEnsembleClassifier
+
+
