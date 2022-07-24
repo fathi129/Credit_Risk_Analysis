@@ -74,9 +74,9 @@ A combinatorial approach of over and undersampling algorithm is used.we will det
 SMOTEENN Algorithm,this method combines the SMOTE ability to generate synthetic examples for minority class and ENN ability to delete some observations from both classes that are identified as having different class between the observation’s class and its K-nearest neighbor majority class.After resampling the training data we get the following results:<br>
 <img src = "https://github.com/fathi129/Credit_Risk_Analysis/blob/master/Screenshots%20of%20Credit%20Risk%20Analysis/Deliverable%203/balance_smoteen.png"  width = 900><br>
 Confusion Matrix:
-<img src = "https://github.com/fathi129/Credit_Risk_Analysis/blob/master/Screenshots%20of%20Credit%20Risk%20Analysis/Deliverable%202/cm_smoteenn.png"  width = 900><br>
+<img src = "https://github.com/fathi129/Credit_Risk_Analysis/blob/master/Screenshots%20of%20Credit%20Risk%20Analysis/Deliverable%202/cm_smoteen.png"  width = 900><br>
 Classification Report:
-<img src = "https://github.com/fathi129/Credit_Risk_Analysis/blob/master/Screenshots%20of%20Credit%20Risk%20Analysis/Deliverable%202/report_smoteenn.png"  width = 900><br>
+<img src = "https://github.com/fathi129/Credit_Risk_Analysis/blob/master/Screenshots%20of%20Credit%20Risk%20Analysis/Deliverable%202/report_smoteen.png"  width = 900><br>
 - Balance Accuracy Score:63.7%
 - High-Risk Precision: 0.01
 - Low-Risk Precision: 1.00
